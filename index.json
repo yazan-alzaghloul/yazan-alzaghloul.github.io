@@ -1,30 +1,76 @@
-
 {
-    "data": {
-        "id": 1,
-        "name": "navaa",
-        "created_at": "2024-01-01T07:56:21.000000Z",
-        "updated_at": "2024-01-01T07:56:21.000000Z",
-        "medicines": [
-            {
+    "data": [
+        {
+            "id": 2,
+            "user_id": 2,
+            "created_at": "2023-12-30T12:29:10.000000Z",
+            "updated_at": "2023-12-30T12:29:10.000000Z",
+            "orders": [],
+            "order_status": null
+        },
+        {
+            "id": 3,
+            "user_id": 2,
+            "created_at": "2023-12-31T18:58:27.000000Z",
+            "updated_at": "2023-12-31T18:58:27.000000Z",
+            "orders": [],
+            "order_status": null
+        },
+        {
+            "id": 4,
+            "user_id": 2,
+            "created_at": "2024-01-01T06:57:31.000000Z",
+            "updated_at": "2024-01-01T06:57:31.000000Z",
+            "orders": [],
+            "order_status": {
                 "id": 4,
-                "category_id": 1,
-                "scientific_name": "qw",
-                "trade_name": "qw",
-                "company": "qw",
-                "image": "http://127.0.0.1:8001/storage/images/1704104756_659293344b26d.jpg",
-                "price": 12,
-                "created_at": "2024-01-01T10:25:56.000000Z",
-                "updated_at": "2024-01-01T10:25:56.000000Z",
-                "category": {
-                    "id": 1,
-                    "name": "navaa",
-                    "created_at": "2024-01-01T07:56:21.000000Z",
-                    "updated_at": "2024-01-01T07:56:21.000000Z"
-                },
-                "expiration_dates": []
+                "basket_id": 4,
+                "status": "In Preparation",
+                "payment_status": "Unpaid",
+                "created_at": "2024-01-01T07:20:29.000000Z",
+                "updated_at": "2024-01-01T07:20:29.000000Z"
             }
-        ]
-    },
-    "message": "the medicine found"
+        },
+        {
+            "id": 5,
+            "user_id": 2,
+            "created_at": "2024-01-01T08:50:18.000000Z",
+            "updated_at": "2024-01-01T08:50:18.000000Z",
+            "orders": [
+                {
+                    "id": 3,
+                    "medicine_id": 1,
+                    "basket_id": 5,
+                    "order_quantity": 150,
+                    "created_at": "2024-01-01T09:02:37.000000Z",
+                    "updated_at": "2024-01-01T09:02:37.000000Z"
+                }
+            ],
+            "order_status": {
+                "id": 5,
+                "basket_id": 5,
+                "status": "Has Been Sent",
+                "payment_status": "Unpaid",
+                "created_at": "2024-01-01T07:20:53.000000Z",
+                "updated_at": "2024-01-01T09:05:23.000000Z"
+            }
+        },
+        {
+            "id": 6,
+            "user_id": 2,
+            "created_at": "2024-01-01T08:52:00.000000Z",
+            "updated_at": "2024-01-01T08:52:00.000000Z",
+            "orders": [],
+            "order_status": null
+        },
+        {
+            "id": 7,
+            "user_id": 2,
+            "created_at": "2024-01-01T08:55:32.000000Z",
+            "updated_at": "2024-01-01T08:55:32.000000Z",
+            "orders": [],
+            "order_status": null
+        }
+    ],
+    "message": "the all baskets"
 }
